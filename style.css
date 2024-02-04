@@ -178,6 +178,7 @@ ul a:hover {
   justify-content: space-between;
   display: none;
   position: relative;
+  transition: 0.6s;
 }
 
 .menu-toggle input {
