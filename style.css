@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 40%;
+  margin-bottom: 25px;
+}
+
+body {
+  background-color: rgb(74, 148, 209);
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+/* card */
+.card {
+  border-bottom: 1px solid #d8e7f5;
+}
+
+.card:last-child {
+  border-bottom: none;
+}
+
+/* header */
+.header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* list item */
+.feature {
+  margin: 50px 0 25px;
+  color: rgb(85, 165, 231);
+}
+
+.item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #d8e7f5;
+}
+
+.item:last-child {
+  border-bottom: 1px solid #d8e7f5;
+}
+
+ul {
+  list-style: none;
+}
+
+/* price */
+.price {
+  color: rgb(85, 165, 231);
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* button */
+.button {
+  text-decoration: none;
+  border: 1px solid #6eb2ee;
+  border-radius: 8px;
+  color: rgb(85, 165, 231);
+  display: inline-block;
+  padding: 15px 35px;
+  margin: 25px 0;
+}
+
+.card:nth-child(2) .button {
+  background-color: rgb(86, 153, 209);
+  color: white;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(195, 224, 248);
+}
+
+.card:nth-child(2) .button:hover,
+.card:nth-child(2) .button:focus {
+  background-color: rgb(195, 224, 248);
+  color: rgb(86, 153, 209);
+}
+
+/* Bagian Navigasi */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 35px;
+  align-items: center;
+  color: rgb(85, 165, 231);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Logo */
+nav .logo {
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  background-color: white;
+}
+
+/* unlist */
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* list link */
+ul a {
+  text-decoration: none;
+  color: rgb(85, 165, 231);
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+ul a:hover {
+  font-weight: bold;
+  color: rgb(42, 112, 168);
+  font-size: 1em;
+}
+
+/* Humber Menu */
+.menu-toggle {
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  display: none;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  z-index: 1;
+  width: 40px;
+  height: 35px;
+  opacity: 0;
+  transform: translate(-6px, -7px);
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(85, 165, 231);
+  border-radius: 5px;
+  transition: 0.6s;
+}
+
+/* menu animation */
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform-origin: 0 -2px;
+  transform: rotate(45deg);
+  background-color: rgb(85, 165, 231);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+  background-color: rgb(85, 165, 231);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform-origin: 0 7px;
+  translate: 2px 0;
+  transform: rotate(-45deg);
+  background-color: rgb(85, 165, 231);
+}
+
+/* Bagian Navigasi */
+
+/* Responsive */
+@media (min-width: 960px) {
+  body {
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+    translate: 0 3%;
+  }
+
+  .card:nth-child(2) .header {
+    margin-top: 11.03px;
+  }
+
+  .card,
+  .card:last-child {
+    border-radius: 10px;
+    border: 1px solid #d8e7f5;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img {
+    margin-top: 10px;
+  }
+
+  /*  */
+  nav {
+    position: absolute;
+    top: o;
+    transition: 1s;
+  }
+}
+
+/* Navigasi */
+
+@media (max-width: 960px) {
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 35px;
+    right: -50%;
+    height: 100vh;
+    background-color: rgb(85, 165, 231);
+    z-index: -1;
+    transition: 1s;
+  }
+  ul a {
+    color: white;
+    cursor: pointer;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul.slide {
+    right: 0;
+  }
+  nav {
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 10;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  nav .menu-toggle.warna {
+    border: 1px solid rgb(85, 165, 231);
+    padding: 3px 0 3px 13px;
+    border-radius: 10px;
+  }
+}
