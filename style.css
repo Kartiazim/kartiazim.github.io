@@ -255,7 +255,6 @@ ul a:hover {
   nav {
     position: absolute;
     top: o;
-    transition: 1s;
   }
 }
 
@@ -300,5 +299,6 @@ ul a:hover {
     border: 1px solid rgb(85, 165, 231);
     padding: 3px 0 3px 13px;
     border-radius: 10px;
+    margin: 0 -15px 0 0;
   }
 }
